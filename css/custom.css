@@ -70,7 +70,7 @@ on hover button design css from - https://uiverse.io/JaydipPrajapati1910/red-din
     position: relative;
     border: none;
     background: none;
-    text-transform: uppercase;
+    text-transform: none;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
@@ -101,6 +101,64 @@ on hover button design css from - https://uiverse.io/JaydipPrajapati1910/red-din
     transition-property: width, left;
   }
 
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #deeeff;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #1065ff;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #00278c;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #d6edff;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+  
 
 .bttn-default {
     color: #fff;
@@ -363,13 +421,13 @@ a, button {
 }
 
 .cta-green {
-    background: #00FFAD;
-    color: #192440;
+    background: #1065ff;
+    color: #ffffff;
 }
 
     .cta-green:hover {
-        color: #ffffff;
-        background: #00e69c;
+        color: #1065ff;
+        background: #ffffff;
     }
 
 .cta-blue {
@@ -433,12 +491,13 @@ a, button {
 }
 
 #join__premium {
-    background: linear-gradient(135deg, #172E3E 0%, #0A5E9A 100%);
+    background: linear-gradient(135deg, #001345 0%, #0034b6 100%);
     color: #ffffff;
+    border-radius: 15px;
 }
 
 #join ul li {
-    padding: 5px 0;
+    padding: 15px 0;
 }
 /********** contact **********/
 #contact {
@@ -450,12 +509,12 @@ a, button {
     }
 
     #contact form {
-        color: #00FFAD;
+        color: #1065ff;
     }
 
         #contact form input, #contact form textarea {
             background: transparent;
-            border: 1px solid #00FFAD;
+            border: 1px solid #1065ff;
             color: #ffffff;
         }
 /********** copyright **********/
