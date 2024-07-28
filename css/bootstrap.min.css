@@ -9701,7 +9701,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .text-white {
-    color: #ffffff !important
+    color: #fff !important
 }
 
 .only-desktop div div a:hover, .only-desktop div div a:active, .only-desktop div div a:visited {
