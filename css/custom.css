@@ -1,6 +1,6 @@
 ﻿:root {
     --bkg: #ffffff;
-    --col-1: #001345;
+    --col-1: #00278c;
     --col-2: #1065ff;
 }
 
@@ -48,9 +48,6 @@ body{
 }
 
 @charset "UTF-8";
-
-/*preloader*/
-
 
 /*!
  *
@@ -170,7 +167,41 @@ on hover button design css from - https://uiverse.io/JaydipPrajapati1910/red-din
     transform: scale(0.95);
   }
   
+/*new div*/
+.landing {
+    width: 100%;
+  height: 100%;
+  --color: rgba(46, 46, 46, 0.3);
+  background-color: #131417;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
 
+/*-----------------------------*/
+
+.console-container {
+ 
+  font-family: Consolas;
+  font-size:30px;
+  font-weight: 600;
+  display:block;
+  position:relative;
+  color:white;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+/*#lndg {
+    font-family: inherit;
+    font-weight: 300px;
+    color: #1065ff;
+}*/
 /********** common setting **********/
 h2 {
     font-size: 2.8rem !important;
@@ -261,14 +292,55 @@ a, button {
             color: #ffffff;
         }
 
-/********** copyright **********/
+/********** ftr **********/
+.ftr {
+    background-color: #f5f8ff;
+    padding-top: 25px;
+    border-top: solid 5px #1065ff;
+}
+/********** ftr icons **********/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-.underline{
-    border-top:solid 1px #444444;
-    margin-left: 2px;
-    margin-right: 2px;
+.bi-envelope-at-fill {
+    font-size: 25px;
+    padding-right: 15px;
+}
+.bi-envelope-at-fill:hover {
+    color: #001345;
 }
 
+.bi-twitter-x {
+    font-size: 25px;
+    padding-right: 15px;
+
+}
+.bi-twitter-x:hover {
+    color: #001345;
+}
+
+.bi-instagram {
+    font-size: 25px;
+    padding-right: 15px;
+
+}
+.bi-instagram:hover {
+    color: #001345;
+}
+
+.bi-youtube {
+    font-size: 25px;
+    padding-right: 15px;
+}
+.bi-youtube:hover {
+    color: #001345;
+}
+
+.bi-github {
+    font-size: 25px;
+}
+.bi-github:hover {
+    color: #001345;
+}
 
 /********** RWD **********/
 @media (max-width: 575px) {

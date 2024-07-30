@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- bootstrap.min.css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- AOS -->
@@ -30,7 +32,6 @@
                 <a href="#"><img src="gvp logo long.png" alt="GVP Logo" style="height: 50px;"></a>
             </div>
             <div style="margin-left: auto; padding: 12px 18px;">
-                <a href="#"><button class="underline-blue">Home</button></a>
                 <a href="#"><button class="underline-blue">About Me</button></a>
                 <a href="#skills"><button class="underline-blue">Skills</button></a>
                 <a href="#join"><button class="underline-blue">Join Me</button></a>
@@ -65,7 +66,7 @@
         </div>
     </header>-->
 
-    <!-- banner -->
+    <!-- banner 
     <div class="jumbotron jumbotron-fluid" id="banner">
         <div class="container text-center text-md-left" style="padding-bottom: 150px">
             <img src="img/dslr.png" class="center-image" width="200px" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" data-aos-once="true" />
@@ -82,6 +83,19 @@
             <a href="#contact" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-blue">Lets Get In Touch 🤝</a>
         </div>
         <div id="particles-js" style="margin-top: -750px;"></div>
+    </div>-->
+    <!--new div-->
+    <div class="landing" style="padding: 150px;">
+        <div style="margin: 150px;" data-aos="fade" data-aos-easing="linear" data-aos-duration="300" data-aos-once="true">
+            <p style="color: var(--bkg); text-align: center; font-size: 20px;">
+                <span style="color: #17e6ae; font-size: 25px; font-weight: 600;">Hello!!👋</span> <br>I am, 
+                <span style="color: #1065ff; font-weight:900; font-size: 40px;">Gupthan Vishnu Prasad</span><br>
+                <span class='console-container'>
+                    <span id='text'></span><span class='console-underscore' id='console'>&#95;</span>
+                </span>
+            </p>
+        </div>
+        <div id="particles-js" style="margin-top: -600px;"></div>
     </div>
     <!-- three-blcok -->
     <div class="container my-5 py-2" id="skills">
@@ -131,50 +145,32 @@
     </div>
 
     <!--Footer-->
-    <div class="jumbotron jumbotron-fluid" id="contact" style="background-color: #1b1b1b;">
-        <div class="container my-5">
-            <div class="row justify-content-between">
-                <div class="col-md-12 text-white text-center">
-                    <!--navigation buttons-->
-                    <ul class="list-unstyled social-list">
-                        <li style="display: inline-block;padding-right:10px">
-                            <a href="https://dangoapi.ga/redirect/mailto:gvp1402@gmail.com">
-                                <img src="img/email-small.png" />
-                            </a>
-                        </li>
-                        <li style="display: inline-block;padding-right:10px">
-                            <a href="https://dangoapi.ga/redirect/twitter.com/gvpofficial_">
-                                <img src="img/twitter-small.png" />
-                            </a>
-                        </li>
-                        <li style="display: inline-block;padding-right:10px">
-                            <a href="https://dangoapi.ga/redirect/instagram.com/gvpofficial_">
-                                <img src="img/instagram-small.png" />
-                            </a>
-                        </li>
-                        <li style="display: inline-block;padding-right:10px">
-                            <a href="https://dangoapi.ga/redirect/youtube.com/channel/UC94J36AGI6DYKWKgkx4inUA">
-                                <img src="img/youtube-small.png" />
-                            </a>
-                        </li>
-                        <li style="display: inline-block;">
-                            <a href="https://dangoapi.ga/redirect/github.com/gvp1402">
-                                <img src="img/github-small.png" />
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="underline"></div>
-                    <div class="text-white align-self-center text-center" style="font-size: 12px;">
-                        <br>
-                        © 2021 - 2024 <span style="color: #1065ff; font-weight: 800;">GVP DEZITECH</span>. All Rights Reserved.
-                        <br>
-                        Designed with ❤️ by <span style="color: #17e6ae; font-weight: 800;">GUPTHAN VISHNU PRASAD</span>
-                    </div>
-                </div>
-            </div>
+    <footer class="ftr">
+        <div style="display: flex; justify-content: center;">
+            <a href="mailto:gvp1402@gmail.com" target="_blank">
+                <i class="bi bi-envelope-at-fill"></i>
+            </a>
+            <a href="https://twitter.com/gvpofficial_" target="_blank">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://instagram.com/gvpofficial_" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://youtube.com/channel/UC94J36AGI6DYKWKgkx4inUA" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://github.com/gvp1402"  target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
         </div>
-    </div>
+        <hr style="border: 1px solid #d2efff;">
+        <div>
+            <p class="text-center" style="color: #001345; font-size: 12px; font-weight: 600;">© 2021 - 2024 <span style="color: #1065ff; font-weight: 900;">GVP DEZITECH</span>. All Rights Reserved.<br>Designed with ❤️ by <span style="color: #1065ff; font-weight: 900;">GUPTHAN VISHNU PRASAD</span>
+            </p>
+        </div>
+    </footer>
 
+    <!--scripts-->
     <script src="js/aos.js"></script>
     <script>
         AOS.init({
@@ -183,7 +179,7 @@
 
     <script src="js/particles.min.js"></script>
     <script src="js/particle-settings.js"></script>
-    
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
