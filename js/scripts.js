@@ -1,3 +1,4 @@
+//HOME TEXT ANIMATION
 //function([string1, string2],target id,[color1,color2])    
 consoleText(['Novice Programmer.', 'Graphic Designer.', 'Tech Enthusiast.'], 'text',['#aa41ff','#ffcd62','#76deff']);
 

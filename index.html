@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- bootstrap.min.css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- font-awesome -->
@@ -20,26 +21,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <!-- Primary Meta Tags -->
     <meta name="author" content="GUPTHAN VISHNU PRASAD">
     <meta name="description" content="I'm a keen tech enthusiast, a graphic designer, video editor and a programmer.">
 </head>
 
 <body>
-    <header class="only-desktop" style="position: sticky; top: 0; right: 0px; left: 0px; z-index: 1031; background-color: #ffffff;" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-        <div class="flex-contiainer" style="display: flex; padding: 0px 50px;">
-            <div style="padding: 12px 18px;">
-                <a href="#"><img src="gvp logo long.png" alt="GVP Logo" style="height: 50px;"></a>
+    <div class="preloader">
+        <div class="progress"></div>
+    </div>
+    <div class="only-desktop container-flex" style="padding: 2px 0px; position: sticky; top: 0%; z-index: 1; background-color: #ffffff;" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+        <div class="text-center" style="display: flex; justify-content: space-around;">
+            <div class="col-md-4 col-sm-4" style="width: auto;">
+                <a href="#"><img src="new img\gvpofficial logo long.png" alt="GVP Logo" style="height: 50px;"></a>
             </div>
-            <div style="margin-left: auto; padding: 12px 18px;">
-                <a href="#"><button class="underline-blue">About Me</button></a>
+            <div class="col-md-4 col-sm-4" style="align-content: center; font-size: 100%; width: auto;">
+                <a href="#landing"><button class="underline-blue">Home</button></a>
                 <a href="#skills"><button class="underline-blue">Skills</button></a>
-                <a href="#join"><button class="underline-blue">Join Me</button></a>
-                <a href="#"><button class="underline-blue">My Gears</button></a>
-                <a href="#contact" >
+                <a href="#abt"><button class="underline-blue">About Me</button></a>
+                <a href="#join"><button class="underline-blue">Join Us</button></a>
+                <a href="#contact"><button class="underline-blue">Contact</button></a>
+                <a href="#"><button class="underline-blue">More▾</button></a>
+            </div>
+            <div class="col-md-4 col-sm-4" style="align-content: center; font-size: 100%; width: auto; padding-left: 100px;">
+                <a href="files\resume.pdf" target="_blank">
                     <button class="cta">
                         <span>
-                            Contacts
+                            Resume
                             <svg width="15px" height="10px" viewBox="0 0 13 10">
                                 <path d="M1,5 L11,5"></path>
                                 <polyline points="8 1 12 5 8 9"></polyline>
@@ -49,8 +61,8 @@
                 </a>
             </div>
         </div>
-    </header>
-
+    </div>
+    
     <!--mobile
     <header class="only-mobile" style="position: fixed; top: 0; right: 0px; left: 0px; z-index: 1030; background-color: var(--col-1)">
         <div class="row justify-content-between" style="padding-top: 15px; padding-bottom: 15px; padding-right: 35px; padding-left: 35px;">
@@ -84,23 +96,39 @@
         </div>
         <div id="particles-js" style="margin-top: -750px;"></div>
     </div>-->
+
     <!--new div-->
-    <div class="landing" style="padding: 150px;">
-        <div style="margin: 150px;" data-aos="fade" data-aos-easing="linear" data-aos-duration="300" data-aos-once="true">
-            <p style="color: var(--bkg); text-align: center; font-size: 20px;">
-                <span style="color: #17e6ae; font-size: 25px; font-weight: 600;">Hello!!👋</span> <br>I am, 
-                <span style="color: #1065ff; font-weight:900; font-size: 40px;">Gupthan Vishnu Prasad</span><br>
-                <span class='console-container'>
-                    <span id='text'></span><span class='console-underscore' id='console'>&#95;</span>
+    <div class="container-flex lndg-bg" id="landing" style="height: 100vh; z-index: 0; display: flex; align-items: center; position: relative; overflow: hidden; background-color: #0e0e0e;">
+        <div class="gradient" style="margin-left: 80%; margin-bottom: 40%;"></div>
+        <div class="gradient" style="margin-left: -15%; margin-top: 40%;"></div>
+        <div class="col-md" style="position: relative;" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="false">
+            <p class="text-center align-content-center" style="color: #ffffff; font-size: 25px; font-weight: 700; text-wrap: nowrap;">
+                <span style="color: #ffffff; font-size: 25px; font-weight: 800;">Hello!!👋</span> <br>I am, 
+                <span class="dela" style="color: #1065ff; font-weight:400; font-size: 40px;">Gupthan Vishnu Prasad</span><br>
+                <span class='typing'>
+                    <span id='text'></span><span class='typing-underscore' id='console'>&#95;</span>
                 </span>
             </p>
         </div>
-        <div id="particles-js" style="margin-top: -600px;"></div>
+        <!--div id="particles-js" style="position: relative;"></div-->
     </div>
-    <!-- three-blcok -->
-    <div class="container my-5 py-2" id="skills">
+    <!--div class="landing container-fluid text-center" id="landing" style="top: -75px;">
+        <div class="row" style="justify-content: center; padding: 325px 0px;" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="false">
+            <p style="color: #ffffff; font-size: 25px; font-weight: 500; text-wrap: nowrap; text-align: center;">
+                <span style="color: #ffffff; font-size: 25px; font-weight: 800;">Hello!!👋</span> <br>I am, 
+                <span class="dela" style="color: #1065ff; font-weight:400; font-size: 40px;">Gupthan Vishnu Prasad</span><br>
+                <span class='typing'>
+                    <span id='text'></span><span class='typing-underscore' id='console'>&#95;</span>
+                </span>
+            </p>
+        </div>
+        <div id="particles-js" style="position: relative; margin-top: -750px;"></div>
+    </div-->
+
+    <!-- three-bloc--k -->
+    <div class="container" id="skills" style="">
         <h2 class="text-center font-weight-bold my-5" style="padding-top:150px">Skills</h2>
-        <div class="row" style="margin-bottom: -150px">
+        <div class="row" style="padding: 0% 10%;">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="false" class="col-md-4 text-center">
                 <img src="img/programmer.png" alt="Programmer" class="mx-auto">
                 <h4>Programmer</h4>
@@ -144,32 +172,74 @@
         </div>
     </div>
 
-    <!--Footer-->
-    <footer class="ftr">
-        <div style="display: flex; justify-content: center;">
-            <a href="mailto:gvp1402@gmail.com" target="_blank">
-                <i class="bi bi-envelope-at-fill"></i>
-            </a>
-            <a href="https://twitter.com/gvpofficial_" target="_blank">
-                <i class="bi bi-twitter-x"></i>
-            </a>
-            <a href="https://instagram.com/gvpofficial_" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://youtube.com/channel/UC94J36AGI6DYKWKgkx4inUA" target="_blank">
-                <i class="bi bi-youtube"></i>
-            </a>
-            <a href="https://github.com/gvp1402"  target="_blank">
-                <i class="bi bi-github"></i>
-            </a>
+    <div id="contact" style="background-color: #e9edf3; padding: 50px 0px;">
+        <div><p style="text-align: center; font-weight: 900; font-size: 40px; color: #1065ff; line-height: 100%;"><span style="text-align: center; font-weight:700; font-size: 20px; color: #002b99;">Contact</span><br>Say Hello!</p></div>
+        <div class="container">
+            <div class="grid text-center" style="margin: 25px; display: flex; justify-content: space-around;">
+                <div class="g-col-6" style="padding: 25px; background-color: #ffffff; border-radius: 25px;">
+                   <div class="g-col-6" style="padding: 25px; margin: 15px; background-color: #ebfffa; border-radius: 25px;">.g-col-6</div>
+                   <div class="g-col-6" style="padding: 25px; margin: 15px; background-color: #ebfffa; border-radius: 25px;">.g-col-6</div>
+                   <div class="g-col-6" style="padding: 25px; margin: 15px; background-color: #ebfffa; border-radius: 25px;">.g-col-6</div>
+                   <div class="g-col-6" style="padding: 25px; margin: 15px; background-color: #ebfffa; border-radius: 25px;">.g-col-6</div>
+               </div>
+               <div class="g-col-6">
+                   <form class="form">
+                       <input type="text" placeholder="E-mail" class="input">
+                       <textarea placeholder="Your message (Don't forget to add your name.)"></textarea>
+                       <button>Submit</button>
+                   </form>
+               </div>
+           </div>
         </div>
-        <hr style="border: 1px solid #d2efff;">
-        <div>
-            <p class="text-center" style="color: #001345; font-size: 12px; font-weight: 600;">© 2021 - 2024 <span style="color: #1065ff; font-weight: 900;">GVP DEZITECH</span>. All Rights Reserved.<br>Designed with ❤️ by <span style="color: #1065ff; font-weight: 900;">GUPTHAN VISHNU PRASAD</span>
-            </p>
+    </div>
+
+    <!--Footer-->
+    <footer class="ftr" id="ftr">
+        <div class="container" style="display: flex;">
+            <div class="col-md-6" style="justify-content: space-between;">
+                <img src="new img\gvpfullname long.png" alt="" height="8%"><br>
+                <p style="text-align: justify;">Hi there!👋,<br>I'm a keen tech enthusiast, I excel my 4 years experience in visualizing your imagination by designing professional illustrative advertisments as a Freelance Graphical Designer. I'm also a passionate Programmer since I selected my career in the field of Computer Science.<br><br>For custom graphic designs, inbox me now!<br>Thanks! 🤜🤛</p>
+            </div>
+            <div class="col-md-6" style="">
+                <p>kpm</p>
+            </div>
+        </div>
+        
+        <hr style="border: 1px solid #a5a5a5;margin: 15px 50px;">
+
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <div class="col-6">
+                <p style="color: #00278c; font-size: 12px; font-weight: 600; text-wrap: nowrap;">© 2021 - 2024 <span class="fbn dela">GVP DEZITECH</span>. All Rights Reserved.<br>Handcrafted by <span class="fbn dela">GUPTHAN VISHNU PRASAD</span>.
+                </p>
+            </div>
+            <div class="col-6" style="width: auto; align-content: center;">
+                <p style="">
+                    <a href="mailto:gvp1402@gmail.com" target="_blank" style="text-decoration: none;">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/gvpofficial_" target="_blank" style="text-decoration: none;">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://instagram.com/gvpofficial_" target="_blank" style="text-decoration: none;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/channel/UC94J36AGI6DYKWKgkx4inUA" target="_blank" style="text-decoration: none;">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="https://github.com/gvp1402" target="_blank" style="text-decoration: none;"
+                    >
+                        <i class="bi bi-github"></i>
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
 
+    <!--div class="made-with">
+        <img src="gvpofficial logo long.png" alt="" style="margin-right: 4px; height: 25px; width: auto;">
+        <div style="display: inline; width: auto; align-self: center;">Designed by <span style="color: var(--col-6);">GVP DEZITECH</span></div>
+    </div-->
+    
     <!--scripts-->
     <script src="js/aos.js"></script>
     <script>
@@ -181,5 +251,27 @@
     <script src="js/particle-settings.js"></script>
     <script src="js/scripts.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Disable Right Click-->
+    <script>
+        document.addEventListener("contextmenu",(event) =>{
+            event.preventDefault();
+        } )
+    </script>
+
+    <!--Preloader-->
+    <script>
+    // Hide the preloader after 3 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.opacity = '0';
+                setTimeout(function() {
+                    document.querySelector('.preloader').style.display = 'none';
+                }, 1000); // 1000ms = 1s
+            }, 3000); // 3000ms = 3s
+        }
+
+    </script>
 </body>
 </html>
