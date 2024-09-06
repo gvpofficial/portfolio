@@ -506,7 +506,7 @@ a, button {
   .progress {
     height: 1% !important;
     width: 15%;
-    background: linear-gradient(#1065ff 0 0), linear-gradient(#0034b6 0 0), #dbdcef;
+    background: linear-gradient(#1065ff 0 0), linear-gradient(#17e6ae 0 0), #dbdcef;
     background-size: 60% 100%;
     background-repeat: no-repeat;
     animation: progress-7x9cg2 3s infinite;
